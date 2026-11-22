@@ -271,6 +271,15 @@ function CountdownSection() {
       <motion.div variants={fadeUp} className="mt-12">
         <Countdown />
       </motion.div>
+      <motion.div variants={fadeUp} className="mt-10 flex justify-center">
+        <div className="rounded-2xl border border-[var(--gold)]/60 bg-[var(--night)]/40 px-6 py-3 text-center">
+          <p className="font-display text-[10px] sm:text-xs tracking-[0.35em] uppercase text-[var(--gold)]">Counting down to</p>
+          <p className="mt-1 font-display text-sm sm:text-lg tracking-[0.12em] text-[var(--gold-light)]">
+            {DATE_LONG} · 12:00 PM <span className="text-[var(--gold-pale)]/70">(IST)</span>
+          </p>
+          <p lang="hi" className="mt-1 font-hindi text-base sm:text-lg text-[var(--gold-pale)]/85">गुरुवार, 26 नवंबर 2026 · दोपहर 12:00 बजे</p>
+        </div>
+      </motion.div>
     </motion.section>
   );
 }
