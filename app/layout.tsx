@@ -44,13 +44,18 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Bobby & Manish — Ring Ceremony · सगाई",
     description,
+    url: "/",
+    siteName: "Bobby & Manish — Ring Ceremony",
     type: "website",
     locale: "en_IN",
+    // A static file so WhatsApp's link previewer gets it instantly from the CDN.
+    images: [{ url: "/og-cover.jpg", width: 1200, height: 630, type: "image/jpeg", alt: "Ring Ceremony of Bobby & Manish — 26th November 2026, Rudra Resort, Lalganj, Raebareli" }],
   },
   twitter: {
     card: "summary_large_image",
     title: "Bobby & Manish — Ring Ceremony · सगाई",
     description,
+    images: ["/og-cover.jpg"],
   },
 };
 
